@@ -58,17 +58,17 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
     > params
     >    * method # list of strings (POSTED) from list: 
     >    * opts_hash (post) #  
-        {
-            username:[
-                "mrgenixus",
-                "book-store"
-            ],
-            email:[
-                "mrgenixus@gmail.com"
-            ]
-
-        }
-    return 
+    >    {
+    >        username:[
+    >            "mrgenixus",
+    >            "book-store"
+    >        ],
+    >        email:[
+    >            "mrgenixus@gmail.com"
+    >        ]
+    >    }
+    return json-string
+    
         [
             {
                 _id: mongo_id,
