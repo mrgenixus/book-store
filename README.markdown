@@ -22,27 +22,27 @@ the general form for accessing the API
 objects will include:
 
 * user
-** create
-** read
-** update
-** delete
-** promote
-** demote
-** verify
-** books # returns full book records, per user, unless specified
-** tags #returns tagnames for user, including book counts
+    * create
+    * read
+    * update
+    * delete
+    * promote
+    * demote
+    * verify
+    * books # returns full book records, per user, unless specified
+    * tags #returns tagnames for user, including book counts
 
 *book
-** create # returns a handle for the book (_id)
-** read(id) # will display the book, title, ISBN and a list ([]) of tags for the book
-** update(id) # adds/removes tags, modifies associated tag counts
-** delete(id) # deletes the book, and reduces associated tag counts
+    * create # returns a handle for the book (_id)
+    * read(id) # will display the book, title, ISBN and a list ([]) of tags for the book
+    * update(id) # adds/removes tags, modifies associated tag counts
+    * delete(id) # deletes the book, and reduces associated tag counts
 
 *tag (not exposed in the web-based api)
-** create
-** read
-** update
-** delete
+    * create
+    * read
+    * update
+    * delete
 
 
   
