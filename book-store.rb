@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -wKU
+#!/usr/bin/env rvm ruby
 # book-store.rb
 require 'rubygems'
 require 'sinatra'
