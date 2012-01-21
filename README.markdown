@@ -28,15 +28,15 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 
 * auth
     * create | login
-        > params 
-        >    * username (post)
-        >    * password (post)
+    > params 
+    >    * username (post)
+    >    * password (post)
 
-        returns {_session:token;error:null|"invalid"|"unverified"}
+    > returns {_session:token;error:null|"invalid"|"unverified"}
 
     * verify 
-        > params
-        >     * token (get)
+    > params
+    >     * token (get)
 
     * delete | logout #  ... should be self-explanitory
 
@@ -48,27 +48,28 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 
 * user
     * create
-        > params 
-        >    * username (post)
-        >    * password (post)
-        >    * email (post)
+    > params 
+    >    * username (post)
+    >    * password (post)
+    >    * email (post)
 
-        returns {_id:mongo_id|null, error:null|"user exists"|"access denied"}
+    > returns {_id:mongo_id|null, error:null|"user exists"|"access denied"}
     * read
-        > params
-        >    * method # list of strings (POSTED) from list: 
-        >    * opts_hash (post) #  
-            {
-                username:[
-                    "mrgenixus",
-                    "book-store"
-                ],
-                email:[
-                    "mrgenixus@gmail.com"
-                ]
+    > params
+    >    * method # list of strings (POSTED) from list: 
+    >    * opts_hash (post) #  
+        {
+            username:[
+                "mrgenixus",
+                "book-store"
+            ],
+            email:[
+                "mrgenixus@gmail.com"
+            ]
 
-            }
-        return [
+        }
+    return 
+        [
             {
                 _id: mongo_id,
                 name: "Sinatra: Up and Running",
