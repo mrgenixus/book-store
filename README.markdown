@@ -29,7 +29,7 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 * auth
     * create | login
 
-    > params 
+    > **params**
     >    * username (post)
     >    * password (post)
 
@@ -39,14 +39,14 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 
     * verify 
 
-    > params
+    > **params**
     >     * token (get)
 
     * delete | logout #  ... should be self-explanitory
 
     * api_login # not implemented
 
-        > params
+        > **params**
         >    * token (get)
 
     * generate_api_token # not implemented
@@ -54,7 +54,7 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 * user
     * create
 
-    > params 
+    > **params**
     >    * username (post)
     >    * password (post)
     >    * email (post)
@@ -68,7 +68,8 @@ some parameters must be sent as a post; parameters specified as (get) can be sen
 
     * read
 
-    > params
+    > **params**
+
     >    * method # list of strings (POSTED) from list: 
     >    * opts_hash (post)
 
