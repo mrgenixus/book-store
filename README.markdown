@@ -32,13 +32,13 @@ objects will include:
     * books # returns full book records, per user, unless specified
     * tags #returns tagnames for user, including book counts
 
-*book
+* book
     * create # returns a handle for the book (_id)
     * read(id) # will display the book, title, ISBN and a list ([]) of tags for the book
     * update(id) # adds/removes tags, modifies associated tag counts
     * delete(id) # deletes the book, and reduces associated tag counts
 
-*tag (not exposed in the web-based api)
+* tag (not exposed in the web-based api)
     * create
     * read
     * update
