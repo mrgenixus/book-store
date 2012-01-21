@@ -23,7 +23,7 @@ the general form for accessing the API
 ### Implemented Routes ###
 > *assume prepended '/:type'*
 
-** authentication **
+**Authentication**
 
 *Loggin in*
 
